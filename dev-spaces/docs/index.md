@@ -1,5 +1,9 @@
 # Manual de OpenShift Dev Spaces
 
+!!! warning "🚧 Em construção"
+    Este manual ainda está sendo escrito e revisado. O conteúdo pode mudar e algumas seções podem
+    estar incompletas. Sugestões são bem-vindas: selecione um trecho e use **Open new Github issue**.
+
 **Ambientes de desenvolvimento na nuvem, prontos em minutos e acessados pelo navegador.**
 O Red Hat OpenShift Dev Spaces, baseado no projeto open source [Eclipse Che](https://eclipse.dev/che/),
 cria um *workspace* (editor, ferramentas, runtimes e código) dentro do cluster OpenShift.

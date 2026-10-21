@@ -1,5 +1,9 @@
 # Manual de Red Hat Enterprise Linux (RHEL)
 
+!!! warning "🚧 Em construção"
+    Este manual ainda está sendo escrito e revisado. O conteúdo pode mudar e algumas seções podem
+    estar incompletas. Sugestões são bem-vindas: selecione um trecho e use **Open new Github issue**.
+
 Passos iniciais para **preparar e operar uma estação RHEL** de desenvolvimento ou servidor de
 laboratório.
 
