@@ -8,22 +8,21 @@ cria um *workspace* (editor, ferramentas, runtimes e código) dentro do cluster 
 [Criar meu primeiro workspace](onboarding/primeiros-30-minutos.md){ .md-button }
 
 ```mermaid
-flowchart LR
-    dev([👩‍💻 Pessoa desenvolvedora<br/>só precisa do navegador]):::pessoa
-    subgraph ocp [Cluster OpenShift]
-        dash[🧭 Dashboard do Dev Spaces]:::devspaces
-        subgraph ws [Workspace · pod no projeto do usuário]
-            ide[🖥️ VS Code ou IntelliJ]:::editor
-            tools[🧰 Container de ferramentas<br/>runtimes, CLIs, oc]:::editor
-            code[(📂 Volume com o código)]:::dados
-        end
+flowchart TB
+    dev([👩‍💻 Pessoa desenvolvedora · só precisa do navegador]):::pessoa
+    dash[🧭 Dashboard do Dev Spaces]:::devspaces
+    git[(🐙 Repositório Git com devfile.yaml)]:::git
+    subgraph ws [Workspace · pod no projeto do usuário, dentro do OpenShift]
+        direction LR
+        ide[🖥️ VS Code ou IntelliJ]:::editor
+        tools[🧰 Ferramentas · runtimes, CLIs, oc]:::editor
+        code[(📂 Código)]:::dados
     end
-    git[(🐙 Repositório Git<br/>com devfile.yaml)]:::git
 
-    dev -- HTTPS + login OpenShift --> dash
-    dash -- cria a partir do devfile --> ws
-    git -- clone --> code
-    dev -. edita no navegador .-> ide
+    dev -- 1 · login OpenShift --> dash
+    dash -- 2 · cria a partir do devfile --> ws
+    git -- 3 · clone --> code
+    dev -. 4 · edita no navegador .-> ide
 
     classDef pessoa fill:#e2e8f0,stroke:#64748b,color:#0f172a
     classDef devspaces fill:#fee2e2,stroke:#ef4444,color:#7f1d1d

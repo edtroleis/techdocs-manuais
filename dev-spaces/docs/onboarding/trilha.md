@@ -5,22 +5,26 @@
     do time; na **primeira semana** entrega um PR feito inteiramente no Dev Spaces.
 
 ```mermaid
-journey
-    title Onboarding no OpenShift Dev Spaces
-    section Primeiros 30 minutos
-      Login no dashboard: 5: Dev
-      Workspace de exemplo: 5: Dev
-      Terminal e editor: 4: Dev
-    section Primeiro dia
-      Workspace do repo do time: 4: Dev
-      Rodar e depurar a aplicação: 3: Dev, Buddy
-      Configurar Git e tokens: 3: Dev
-    section Primeira semana
-      Ajustar o devfile: 3: Dev, Tech lead
-      Primeiro PR pelo Dev Spaces: 5: Dev
+flowchart TB
+    subgraph m30 [⏱️ Primeiros 30 minutos]
+        direction LR
+        a1[Login no dashboard]:::etapa --> a2[Workspace de exemplo]:::etapa --> a3[Terminal e editor]:::etapa
+    end
+    subgraph d1 [📅 Primeiro dia]
+        direction LR
+        b1[Workspace do repo do time]:::etapa --> b2[Rodar e depurar]:::etapa --> b3[Git e tokens]:::etapa
+    end
+    subgraph s1 [🗓️ Primeira semana]
+        direction LR
+        c1[Entender o devfile]:::etapa --> c2[Melhorar o devfile]:::etapa --> c3[Primeiro PR 🎉]:::fim
+    end
+    m30 --> d1 --> s1
+
+    classDef etapa fill:#dbeafe,stroke:#3b82f6,color:#1e3a8a
+    classDef fim fill:#dcfce7,stroke:#22c55e,color:#14532d
 ```
 
-*Figura 2 · A jornada de onboarding. A nota de 1 a 5 indica o esforço esperado em cada etapa.*
+*Figura 2 · A jornada de onboarding em três etapas, do primeiro login ao primeiro PR.*
 
 | Etapa | Objetivo | Guia | Checklist |
 |-------|----------|------|-----------|
