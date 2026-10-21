@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: manual-wsl
-  title: WSL
+  title: WSL/RHEL
   description: Prepare o Windows Subsystem for Linux para trabalhar com distribuições Linux no Windows
   tags: [manual, wsl]
   annotations:
