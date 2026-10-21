@@ -6,7 +6,9 @@
     para um ambiente pronto no navegador.
 
 O **Windows Subsystem for Linux (WSL)** executa distribuições Linux dentro do Windows, com
-kernel Linux real (WSL 2). É o ambiente padrão de desenvolvimento em estações Windows.
+kernel Linux real (WSL 2). Foi o ambiente padrão de desenvolvimento em estações Windows e hoje
+fica apenas como **alternativa legada**: o caminho recomendado é o
+[OpenShift Dev Spaces](http://localhost:3000/docs/default/component/manual-dev-spaces).
 
 | Etapa | Página |
 |-------|--------|
