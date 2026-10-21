@@ -48,3 +48,20 @@ spec:
   type: manual
   lifecycle: production
   owner: platform-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: manual-dev-spaces
+  title: OpenShift Dev Spaces
+  description: Ambientes de desenvolvimento na nuvem, prontos no navegador, definidos como código
+  tags: [manual, openshift, dev-spaces]
+  annotations:
+    github.com/project-slug: edtroleis/techdocs-manuais
+    backstage.io/techdocs-ref: dir:./dev-spaces
+    portal.local/category: Ambiente na nuvem
+    portal.local/topics: Onboarding, Workspaces, Devfile, Administração
+spec:
+  type: manual
+  lifecycle: production
+  owner: platform-team
