@@ -1,0 +1,50 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: manual-wsl
+  title: WSL
+  description: Prepare o Windows Subsystem for Linux para trabalhar com distribuições Linux no Windows
+  tags: [manual, wsl]
+  annotations:
+    github.com/project-slug: edtroleis/techdocs-manuais
+    backstage.io/techdocs-ref: dir:./wsl
+    portal.local/category: Ambiente Linux
+    portal.local/topics: Instalação, Distribuições, Validação
+spec:
+  type: manual
+  lifecycle: production
+  owner: platform-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: manual-podman-desktop
+  title: Podman Desktop
+  description: Configure o ambiente local de containers e valide a conexão com o Podman
+  tags: [manual, podman]
+  annotations:
+    github.com/project-slug: edtroleis/techdocs-manuais
+    backstage.io/techdocs-ref: dir:./podman-desktop
+    portal.local/category: Containers
+    portal.local/topics: Instalação, Podman machine, Containers
+spec:
+  type: manual
+  lifecycle: production
+  owner: platform-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: manual-rhel
+  title: Red Hat Enterprise Linux (RHEL)
+  description: Consulte os passos iniciais para preparar e operar uma estação RHEL
+  tags: [manual, rhel]
+  annotations:
+    github.com/project-slug: edtroleis/techdocs-manuais
+    backstage.io/techdocs-ref: dir:./rhel
+    portal.local/category: Sistema Operacional
+    portal.local/topics: Acesso, Pacotes, Segurança
+spec:
+  type: manual
+  lifecycle: production
+  owner: platform-team

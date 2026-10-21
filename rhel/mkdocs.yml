@@ -1,0 +1,19 @@
+site_name: Manual de RHEL
+site_description: Guia de preparação de uma estação Red Hat Enterprise Linux
+repo_url: https://github.com/edtroleis/techdocs-manuais
+edit_uri: edit/main/rhel/docs/
+nav:
+  - Início: index.md
+  - Acesso: acesso.md
+  - Pacotes: pacotes.md
+  - Segurança: seguranca.md
+  - Serviços e logs: servicos-logs.md
+plugins:
+  - techdocs-core
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+strict: true

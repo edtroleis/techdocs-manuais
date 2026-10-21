@@ -1,0 +1,20 @@
+site_name: Manual de Podman Desktop
+site_description: Guia de instalação e configuração do Podman Desktop
+repo_url: https://github.com/edtroleis/techdocs-manuais
+edit_uri: edit/main/podman-desktop/docs/
+nav:
+  - Início: index.md
+  - Instalação: instalacao.md
+  - Podman machine: podman-machine.md
+  - Containers: containers.md
+  - Compose e Kubernetes: compose-kubernetes.md
+  - Problemas comuns: problemas-comuns.md
+plugins:
+  - techdocs-core
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+strict: true
