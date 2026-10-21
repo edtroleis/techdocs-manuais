@@ -12,7 +12,7 @@ metadata:
     portal.local/topics: Instalação, Distribuições, Validação
 spec:
   type: manual
-  lifecycle: production
+  lifecycle: deprecated
   owner: platform-team
 ---
 apiVersion: backstage.io/v1alpha1

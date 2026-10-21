@@ -1,5 +1,10 @@
 # Manual de WSL
 
+!!! danger "🔴 Descontinuado"
+    Este manual não recebe mais atualizações e será removido. Use o
+    [Manual de OpenShift Dev Spaces](http://localhost:3000/docs/default/component/manual-dev-spaces)
+    para um ambiente pronto no navegador.
+
 O **Windows Subsystem for Linux (WSL)** executa distribuições Linux dentro do Windows, com
 kernel Linux real (WSL 2). É o ambiente padrão de desenvolvimento em estações Windows.
 
